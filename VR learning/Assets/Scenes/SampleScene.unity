@@ -341,7 +341,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -977,11 +977,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 036416ed59246cd4bb8f63fa9bd90382, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.229
+      value: -0.0132
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 036416ed59246cd4bb8f63fa9bd90382, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.022
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 036416ed59246cd4bb8f63fa9bd90382, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1403,7 +1403,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1641537429162237252, guid: 472233540dbe25d4ba607227d246bda0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1641537429162237252, guid: 472233540dbe25d4ba607227d246bda0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1525,6 +1525,10 @@ PrefabInstance:
     - target: {fileID: 7141592179350588639, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141592179451937098, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.103
       objectReference: {fileID: 0}
     - target: {fileID: 7141592179451937098, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1686,7 +1690,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7141592178054979325}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 036416ed59246cd4bb8f63fa9bd90382, type: 3}
+  m_Avatar: {fileID: 9000000, guid: d13865c8dce00524a918f0cbd70e45cd, type: 3}
   m_Controller: {fileID: 9100000, guid: 8af640e8bbf3e474e9eedd97b45b5c4a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
