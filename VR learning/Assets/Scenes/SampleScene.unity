@@ -3926,10 +3926,26 @@ PrefabInstance:
       propertyPath: followObject
       value: 
       objectReference: {fileID: 1397396003}
+    - target: {fileID: 580009154929332839, guid: 548012de2192851498dfdfd47a782817, type: 3}
+      propertyPath: animationSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 580009154929332839, guid: 548012de2192851498dfdfd47a782817, type: 3}
+      propertyPath: rotationOffset.z
+      value: -89.49
+      objectReference: {fileID: 0}
     - target: {fileID: 580009155344825150, guid: 548012de2192851498dfdfd47a782817, type: 3}
       propertyPath: followObject
       value: 
       objectReference: {fileID: 1566318512}
+    - target: {fileID: 580009155344825150, guid: 548012de2192851498dfdfd47a782817, type: 3}
+      propertyPath: animationSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 580009155344825150, guid: 548012de2192851498dfdfd47a782817, type: 3}
+      propertyPath: rotationOffset.z
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 1511952326849537323, guid: 548012de2192851498dfdfd47a782817, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -4064,19 +4080,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4082893778273263522, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Radius
-      value: 0.022217602
+      value: 0.042967357
       objectReference: {fileID: 0}
     - target: {fileID: 4082893778273263522, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.x
-      value: -0.013966434
+      value: -0.013966419
       objectReference: {fileID: 0}
     - target: {fileID: 4082893778273263522, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.y
-      value: -0.011368573
+      value: -0.011368558
       objectReference: {fileID: 0}
     - target: {fileID: 4082893778273263522, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.z
-      value: 0.020380266
+      value: 0.06367811
       objectReference: {fileID: 0}
     - target: {fileID: 4082893778273263522, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_IsTrigger
@@ -4092,11 +4108,11 @@ PrefabInstance:
       objectReference: {fileID: 1895638262}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Radius
-      value: 0.02072629
+      value: 0.04351818
       objectReference: {fileID: 0}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.x
-      value: 0.017989349
+      value: 0.030479457
       objectReference: {fileID: 0}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.y
@@ -4104,7 +4120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Center.z
-      value: 0.034573972
+      value: 0.069978975
       objectReference: {fileID: 0}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_IsTrigger

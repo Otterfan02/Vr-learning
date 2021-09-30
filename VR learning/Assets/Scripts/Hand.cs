@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 
 
@@ -54,6 +56,10 @@ public class Hand : MonoBehaviour
     {
         AnimateHand();
 
+    }
+
+    private void FixedUpdate()
+    {
         PhysicsMove();
     }
 
@@ -65,11 +71,18 @@ public class Hand : MonoBehaviour
         body.velocity = (positionWithOffsett - transform.position).normalized * (followSpeed * distance);
         
         //Rotation
-        var rotationWithOffset = followTarget.rotation * Quaternion.Euler(rotationOffset);
+        /*var rotationWithOffset = followTarget.rotation * Quaternion.Euler(rotationOffset);
         var q = rotationWithOffset * Quaternion.Inverse(body.rotation);
         q.ToAngleAxis(out float angle, out Vector3 axis);
-        body.angularVelocity = angle * (axis * Mathf.Deg2Rad * rotateSpeed);
-        
+        body.angularVelocity = angle * (axis * Mathf.Deg2Rad * rotateSpeed);*/
+
+        var rotationWithOffset = followTarget.rotation * Quaternion.Euler(rotationOffset);
+
+        body.MoveRotation(Quaternion.Slerp(transform.rotation, rotationWithOffset, Time.fixedDeltaTime * 20 * 2));
+        /*body.angularVelocity = Quaternion
+            .Slerp(body.rotation, followTarget.rotation * Quaternion.Euler(rotationOffset), Time.fixedDeltaTime * 3f)
+            .eulerAngles;*/
+
 
     }
 
@@ -87,10 +100,13 @@ public class Hand : MonoBehaviour
     {
         if (gripCurrent != gripTarget)
         {
+            
             gripCurrent = Mathf.MoveTowards(gripCurrent, gripTarget, Time.deltaTime * animationSpeed);
+            Debug.Log("gripCurrent = " + gripCurrent);
             animator.SetFloat(animatorGripParam, gripCurrent);
         }        if (triggerCurrent != triggerTarget)
         {
+            Debug.Log("Trigger Current = " + triggerCurrent);
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * animationSpeed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);
         }
