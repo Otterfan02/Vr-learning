@@ -29,7 +29,7 @@ public class Hand : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        mesh.GetComponentInChildren<SkinnedMeshRenderer>();
+        mesh = gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
 
         //Physics movement
         followTarget = followObject.transform;
@@ -58,6 +58,9 @@ public class Hand : MonoBehaviour
     {
         var distance = Vector3.Distance(followTarget.position, transform.position);
         body.velocity = (followTarget.position - transform.position).normalized * (followSpeed * distance);
+        
+        //body.position = followTarget.position;
+        //body.rotation = followTarget.rotation;
     }
 
     public void SetGrip(float readValue)
