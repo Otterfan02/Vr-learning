@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 508775343261372081}
   - component: {fileID: 2225263310029618335}
   - component: {fileID: 2283734763925784571}
+  - component: {fileID: 1093530229882665049}
   m_Layer: 0
   m_Name: Bouncy ball
   m_TagString: Ball
@@ -220,3 +221,15 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &1093530229882665049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508775343261372080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b796331f96a00469bd1acff62186d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
