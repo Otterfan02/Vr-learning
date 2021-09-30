@@ -206,7 +206,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LeftHand
+  m_Name: HandAnimator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Trigger
@@ -214,13 +214,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Grip
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -322,7 +322,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Trigger
+    m_DirectBlendParameter: Grip
     m_Mirror: 0
   m_BlendParameter: Trigger
   m_BlendParameterY: Trigger
@@ -370,7 +370,7 @@ AnimatorStateMachine:
     m_Position: {x: 281.5, y: 67.5, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6433141633632497173}
-    m_Position: {x: 536.5, y: 66.5, z: 0}
+    m_Position: {x: 540, y: 70, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
