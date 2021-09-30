@@ -56,11 +56,16 @@ public class Hand : MonoBehaviour
 
     private void PhysicsMove()
     {
+        //Movement
         var distance = Vector3.Distance(followTarget.position, transform.position);
         body.velocity = (followTarget.position - transform.position).normalized * (followSpeed * distance);
         
-        //body.position = followTarget.position;
-        //body.rotation = followTarget.rotation;
+        //Rotation
+        var q = followTarget.rotation * Quaternion.Inverse(body.rotation);
+        q.ToAngleAxis(out float angle, out Vector3 axis);
+        body.angularVelocity = angle * (axis * Mathf.Deg2Rad * rotateSpeed);
+        
+
     }
 
     public void SetGrip(float readValue)
