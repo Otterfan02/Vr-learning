@@ -102,11 +102,11 @@ public class Hand : MonoBehaviour
         {
             
             gripCurrent = Mathf.MoveTowards(gripCurrent, gripTarget, Time.deltaTime * animationSpeed);
-            Debug.Log("gripCurrent = " + gripCurrent);
+            //Debug.Log("gripCurrent = " + gripCurrent);
             animator.SetFloat(animatorGripParam, gripCurrent);
         }        if (triggerCurrent != triggerTarget)
         {
-            Debug.Log("Trigger Current = " + triggerCurrent);
+            //Debug.Log("Trigger Current = " + triggerCurrent);
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * animationSpeed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);
         }
