@@ -1223,11 +1223,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSpeed: 5
-  followObject: {fileID: 1397396003}
+  followObject: {fileID: 1330145407}
   followSpeed: 30
   rotateSpeed: 100
   positionOffset: {x: 0, y: 0, z: 0}
-  rotationOffset: {x: 0, y: 0, z: -89.49}
+  rotationOffset: {x: 0, y: 0, z: 90}
 --- !u!54 &448524514
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2960,6 +2960,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1330145407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6855893923638594144, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
+  m_PrefabInstance: {fileID: 6855893924664366544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1381917966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,7 +7779,7 @@ PrefabInstance:
     - target: {fileID: 4339516263564577490, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: hand
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 448524513}
     - target: {fileID: 6287298942627361083, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_Radius
       value: 0.04351818
@@ -7866,11 +7871,11 @@ PrefabInstance:
     - target: {fileID: 7250195905161788636, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 448524513}
     - target: {fileID: 7250195905161788636, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 448524513}
     - target: {fileID: 7250195905161788636, guid: 61de108c2b85d0543b365b24952c3cd9, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
